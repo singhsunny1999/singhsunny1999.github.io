@@ -1,0 +1,16 @@
+<!-- Free Plan -->
+<div class="plan">
+  <h2>Free</h2>
+  <p>Basic access, watermark on videos</p>
+  <a href="tools.html" class="button">Start Free</a>
+</div>
+
+<!-- Premium Plan -->
+<div class="plan">
+  <h2>Pro - ₹499</h2>
+  <p>No watermark, unlimited videos</p>
+  <!-- Razorpay Payment Button -->
+  <script src="https://checkout.razorpay.com/v1/payment-button.js"
+          data-payment_button_id="pl_ABC123xyz"
+          async> </script>
+</div>
