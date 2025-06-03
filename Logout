@@ -1,0 +1,1 @@
+<button onclick="firebase.auth().signOut().then(() => window.location.href='auth.html')">Logout</button>
