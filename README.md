@@ -115,3 +115,4 @@ main {
   margin: 1rem 0;
   font-size: 1.2rem;
 }
+<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Qcpbrprcdfh2X4" async> </script> </form>
