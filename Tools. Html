@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AI Tools</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tools.html">Tools</a>
+    </nav>
+  </header>
+  <main>
+    <ul class="tool-list">
+      <li><a href="tts.html">Text to Speech</a></li>
+      <li><a href="#">Voice Cloning (Coming Soon)</a></li>
+      <li><a href="#">AI Music Generator (Coming Soon)</a></li>
+    </ul>
+  </main>
+</body>
+</html>
