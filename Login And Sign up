@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login / Signup</title>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+</head>
+<body>
+  <h2>Welcome to My AI Tool</h2>
+  <input type="email" id="email" placeholder="Email"><br>
+  <input type="password" id="password" placeholder="Password"><br><br>
+
+  <button onclick="login()">Login</button>
+  <button onclick="signup()">Signup</button>
+
+  <p id="msg"></p>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_PROJECT.firebaseapp.com",
+      projectId: "YOUR_PROJECT",
+      appId: "YOUR_APP_ID"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    function login() {
+      const email = document.getElementById('email').value;
+      const pass = document.getElementById('password').value;
+      auth.signInWithEmailAndPassword(email, pass)
+        .then(() => window.location.href = 'tools.html')
+        .catch(e => document.getElementById('msg').innerText = e.message);
+    }
+
+    function signup() {
+      const email = document.getElementById('email').value;
+      const pass = document.getElementById('password').value;
+      auth.createUserWithEmailAndPassword(email, pass)
+        .then(() => window.location.href = 'tools.html')
+        .catch(e => document.getElementById('msg').innerText = e.message);
+    }
+  </script>
+</body>
+</html>
