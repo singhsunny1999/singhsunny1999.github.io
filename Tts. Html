@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text to Speech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Text to Speech</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tools.html">Tools</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Try Text to Speech</h2>
+    <textarea id="inputText" rows="5" cols="40" placeholder="Type something..."></textarea><br>
+    <button onclick="speak()">Speak</button>
+  </main>
+
+  <script>
+    function speak() {
+      const text = document.getElementById("inputText").value;
+      const speech = new SpeechSynthesisUtterance(text);
+      speech.lang = "en-US";
+      window.speechSynthesis.speak(speech);
+    }
+  </script>
+</body>
+</html>
