@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TopMediai Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TopMediai Tools</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tools.html">Tools</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Welcome to Your AI Tools Hub</h2>
+    <p>This is a clone of TopMediai with Text to Speech, Voice Cloning, and more.</p>
+    <a href="tools.html" class="button">Explore Tools</a>
+  </main>
+</body>
+</html>
